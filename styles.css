@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Protest+Strike&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+nav ul li a {
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(254, 80, 0);
+}
+
+section.about-us {
+    padding: 60px 20px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    color: #ff6600;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: "Protest Strike", sans-serif;
+    
+}
+
+.about-us h1 {
+    font-size: 60px;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-family: "Protest Strike", sans-serif;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.highlight {
+    font-size: 20px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.about-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #f4f4f4;
+}
