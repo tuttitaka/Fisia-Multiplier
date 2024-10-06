@@ -1,0 +1,36 @@
+.carousel-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item {
+    padding: 40px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.carousel-item h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Protest Strike", sans-serif;
+    text-transform: uppercase;
+}
+
+/* Cores personalizadas para cada senso */
+.seiri { background-color: #ff6666; }       
+.seiton { background-color: #ffcc66; color: black; }      
+.seiso { background-color: #66cc66; }       
+.seiketsu { background-color: #66ccff; }   
+.shitsuke { background-color: #ff99cc; }    
+
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+.slick-dots li button:before {
+    color: black;
+}

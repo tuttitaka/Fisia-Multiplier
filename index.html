@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiplicadores</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carroseul.css">
+    <link rel="stylesheet" href="quiz.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+
 </head>
 <body>
     <header>
@@ -16,22 +23,111 @@
             <ul>
                 <li><a href="#Picking">Picking</a></li>
                 <li><a href="#">Multiplicadores</a></li>
-                <li><a href="#">5S</a></li>
+                <li><a href="#5S">5S</a></li>
             </ul>
         </nav>
     </header>
         <div class="main-image">
             <img src=".//assets/fisia-store.jpg" alt="Imagem de Fundo">
         </div>
-        <section  class="about-us">
+        <section id="Picking" class="about-us">
             <h2>#SOMOSPICKING</h2>
             <h1>NÓS SOMOS PICKING<br>DA NIKE NO BRASIL.</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestias quod commodi exercitationem velit aliquid, animi sapiente sit maiores dolores suscipit ea. Dignissimos, ab earum eum obcaecati aspernatur repellat aut?
+                Picking é um termo usado na logística e no gerenciamento de armazéns que se refere ao processo de separação e coleta de itens específicos para atender a um pedido. Em termos simples, é a etapa em que os produtos são retirados das prateleiras e preparados para envio ou montagem de um pedido. <br><br>
+No caso da Nike, uma empresa global de artigos esportivos, o processo de picking é extremamente importante, dado o volume de produtos e a necessidade de uma logística eficiente para garantir que os itens certos sejam entregues no tempo adequado.
             </p>
-            <div id="Picking"></div>
         </section>
     
-    
+        <div id="5S" class="carousel-container">
+            <div class="carousel-item seiri">
+                <h2>Seiri (Utilização)</h2>
+                <p>Eliminar o que não é necessário e manter apenas o que é útil no ambiente de trabalho. Isso ajuda a evitar acúmulo de materiais desnecessários e a melhorar a organização e eficiência.</p>
+                <p><strong>Exemplo:</strong> Descartar ou arquivar documentos antigos e manter ferramentas essenciais à mão.</p>
+            </div>
+            <div class="carousel-item seiton">
+                <h2>Seiton (Organização)</h2>
+                <p>Organizar os itens de maneira lógica e eficiente, facilitando o acesso rápido a ferramentas e informações, e minimizando o tempo de busca.</p>
+                <p><strong>Exemplo:</strong> Identificar locais específicos para cada item, como prateleiras etiquetadas para ferramentas ou arquivos digitais bem estruturados.</p>
+            </div>
+            <div class="carousel-item seiso">
+                <h2>Seiso (Limpeza)</h2>
+                <p>Manter o ambiente de trabalho limpo e arrumado, identificando e eliminando as causas de sujeira e desorganização para prevenir problemas futuros.</p>
+                <p><strong>Exemplo:</strong> Realizar limpezas regulares nas estações de trabalho e manter as máquinas em condições de uso.</p>
+            </div>
+            <div class="carousel-item seiketsu">
+                <h2>Seiketsu (Padronização)</h2>
+                <p>Padronizar processos e práticas para garantir a manutenção dos três primeiros S, promovendo a uniformidade nas atividades diárias.</p>
+                <p><strong>Exemplo:</strong> Criar procedimentos operacionais padrão para limpeza e organização das ferramentas de trabalho.</p>
+            </div>
+            <div class="carousel-item shitsuke">
+                <h2>Shitsuke (Disciplina)</h2>
+                <p>Manter a disciplina e o compromisso com as práticas dos 5S, garantindo que os padrões sejam seguidos consistentemente ao longo do tempo.</p>
+                <p><strong>Exemplo:</strong> Criar uma cultura de organização e responsabilidade entre os funcionários, com treinamentos regulares e auditorias de conformidade.</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.carousel-container').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    adaptiveHeight: true
+                });
+            });
+        </script>
+        
+        <div class="body">
+            <div class="quiz-container">
+                <h2 class="h2-quiz">Quiz 5S</h2>
+                <form id="quizForm">
+                    <div class="question">
+                        <h3>1. O que significa o conceito de "Seiri"?</h3>
+                        <label><input type="radio" name="q1" value="a"> Organizar os itens de maneira lógica.</label>
+                        <label><input type="radio" name="q1" value="b"> Eliminar o que não é necessário.</label>
+                        <label><input type="radio" name="q1" value="c"> Manter o ambiente de trabalho limpo.</label>
+                    </div>
+        
+                    <div class="question">
+                        <h3>2. Qual é o foco principal de "Seiton"?</h3>
+                        <label><input type="radio" name="q2" value="a"> Organizar ferramentas e informações de forma acessível.</label>
+                        <label><input type="radio" name="q2" value="b"> Manter a disciplina no ambiente de trabalho.</label>
+                        <label><input type="radio" name="q2" value="c"> Estabelecer padrões de limpeza e organização.</label>
+                    </div>
+        
+                    <div class="question">
+                        <h3>3. Como o senso "Seiso" é aplicado na prática?</h3>
+                        <label><input type="radio" name="q3" value="a"> Realizando limpezas periódicas no local de trabalho.</label>
+                        <label><input type="radio" name="q3" value="b"> Identificando a melhor forma de organizar itens.</label>
+                        <label><input type="radio" name="q3" value="c"> Padronizando processos operacionais.</label>
+                    </div>
+        
+                    <div class="question">
+                        <h3>4. O que "Seiketsu" busca padronizar?</h3>
+                        <label><input type="radio" name="q4" value="a"> Os hábitos de trabalho e uso de ferramentas.</label>
+                        <label><input type="radio" name="q4" value="b"> O descarte de materiais desnecessários.</label>
+                        <label><input type="radio" name="q4" value="c"> A disciplina e comprometimento com o 5S.</label>
+                    </div>
+        
+                    <div class="question">
+                        <h3>5. Qual é o objetivo de "Shitsuke"?</h3>
+                        <label><input type="radio" name="q5" value="a"> Manter a organização constante no ambiente de trabalho.</label>
+                        <label><input type="radio" name="q5" value="b"> Implementar a limpeza regular no ambiente.</label>
+                        <label><input type="radio" name="q5" value="c"> Garantir a disciplina e o cumprimento dos padrões estabelecidos.</label>
+                    </div>
+        
+                    <button type="button" onclick="submitQuiz()">Enviar Respostas</button>
+                </form>
+        
+                <div class="result" id="result"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
 </body>
 </html>
